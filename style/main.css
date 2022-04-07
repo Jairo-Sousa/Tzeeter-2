@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-text-color: rgb(15, 20, 25);
+  --basic-link-color: rgb(83, 100, 113);
+}
+
+body {
+  background-color: white;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+nav li,
+#publicacoes {
+  margin: 0.5rem;
+}
+
+nav li a,
+#publicacoes a {
+  padding: 0.5rem;
+}
+
+nav a:hover,
+#publicacoes a:hover {
+  background-color: rgba(15, 25, 20, 0.1);
+  border-radius: 1rem;
+}
+
+#estatisticas a {
+  color: var(--basic-link-color);
+}
+
+#estatisticas a span {
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+
+#estatisticas a:hover,
+#acoes a:hover {
+  text-decoration: underline;
+}
+
+#acoes {
+  margin: 0.5rem;
+}
+#acoes a {
+  color: var(--basic-link-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+#acoes a:first-child:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+  color: rgba(29, 155, 240, 1);
+}
+
+#acoes a:nth-child(2):hover {
+  background-color: rgba(0, 186, 124, 0.1);
+  color: rgba(0, 186, 124, 1);
+}
+
+#acoes a:nth-child(3):hover {
+  background-color: rgba(249, 24, 128, 0.1);
+  color: rgba(249, 24, 128, 1);
+}
+
+.nickname,
+.localization,
+.registrationDate,
+.tzeetDate {
+  color: var(--basic-link-color);
+}
+.tzeet {
+  width: fit-content;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.tzeet:hover {
+  background-color: rgba(249, 24, 128, 0.1);
+}
